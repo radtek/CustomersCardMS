@@ -13,6 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="基础数据">
+      <UniqueIdentifier>{24c1f4eb-4b90-4171-ab5c-791b9c38f2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="电信数据">
+      <UniqueIdentifier>{9315e013-8beb-433e-b6d4-64a3cd0bc931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="报竣数据">
+      <UniqueIdentifier>{315de381-b5b7-4b2d-832e-4b5b3256494d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据库管理">
+      <UniqueIdentifier>{ba376f99-cc74-4a7a-a27d-019476699c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="常用数据结构">
+      <UniqueIdentifier>{1fb9e7f6-6c2d-478c-b412-f952743be2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="内存管理">
+      <UniqueIdentifier>{a51293c1-1709-44d1-a7f4-1f882bda021d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="主工作线程">
+      <UniqueIdentifier>{dc8fed2f-8d16-40c2-9dcb-86c4d8dfc614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="客户端命令接收发送">
+      <UniqueIdentifier>{6c1c8575-4ea3-4ac8-909f-7718e56a2100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="电信数据接收发送">
+      <UniqueIdentifier>{e11f5999-9b3e-4237-b3a3-e2016ee036ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="报竣数据接收发送">
+      <UniqueIdentifier>{8605c479-b3ae-40da-8095-2e8e3e1705e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="协议命令解析">
+      <UniqueIdentifier>{c1dd5fc8-8799-49d6-baba-05274beb3d62}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,6 +54,33 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="db_mysql.h">
+      <Filter>数据库管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_data.h">
+      <Filter>常用数据结构</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_memory.h">
+      <Filter>内存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_initsock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_client_request.h">
+      <Filter>客户端命令接收发送</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_client_requestcompletion.h">
+      <Filter>客户端命令接收发送</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_cmd.h">
+      <Filter>协议命令解析</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_nc_request.h">
+      <Filter>报竣数据接收发送</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_nc_requestcompletion.h">
+      <Filter>报竣数据接收发送</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -28,6 +88,36 @@
     </ClCompile>
     <ClCompile Include="CustomersCardMS.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="db_mysql.cpp">
+      <Filter>数据库管理</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_data.cpp">
+      <Filter>常用数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_memory.cpp">
+      <Filter>内存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="worker_thread.cpp">
+      <Filter>主工作线程</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_initsock.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_client_request.cpp">
+      <Filter>客户端命令接收发送</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_client_requestcompletion.cpp">
+      <Filter>客户端命令接收发送</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_cmd.cpp">
+      <Filter>协议命令解析</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_nc_request.cpp">
+      <Filter>报竣数据接收发送</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_nc_requestcompletion.cpp">
+      <Filter>报竣数据接收发送</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

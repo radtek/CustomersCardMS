@@ -43,7 +43,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -75,6 +75,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\CustomersCardMS\msgpack-c\include;D:\work\tbb_concurrent_hash_map\include;C:\Program Files\MySQL\MySQL Server 5.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\CustomersCardMS\tbb_concurrent_hash_map\build\vs2013\x64\Debug-MT;C:\Program Files\MySQL\MySQL Server 5.6\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -148,17 +150,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ms_client_requestcompletion.h" />
+    <ClInclude Include="ms_cmd.h" />
+    <ClInclude Include="ms_initsock.h" />
+    <ClInclude Include="db_mysql.h" />
+    <ClInclude Include="ms_data.h" />
+    <ClInclude Include="ms_memory.h" />
+    <ClInclude Include="ms_client_request.h" />
+    <ClInclude Include="ms_nc_request.h" />
+    <ClInclude Include="ms_nc_requestcompletion.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ms_client_requestcompletion.cpp" />
+    <ClCompile Include="ms_cmd.cpp" />
+    <ClCompile Include="ms_initsock.cpp" />
     <ClCompile Include="CustomersCardMS.cpp" />
+    <ClCompile Include="db_mysql.cpp" />
+    <ClCompile Include="ms_data.cpp" />
+    <ClCompile Include="ms_memory.cpp" />
+    <ClCompile Include="ms_client_request.cpp" />
+    <ClCompile Include="ms_nc_request.cpp" />
+    <ClCompile Include="ms_nc_requestcompletion.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="worker_thread.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
